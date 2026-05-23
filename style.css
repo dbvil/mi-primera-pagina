@@ -1,17 +1,96 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 body {
     background-color: #f0f4ff;
 }
-h1 {color: #1d4ed8;
+header {
+    padding: 20px;
+}
+header p {
+    color: #374151;
+    text-align: center;
+    margin-bottom: 24px;
+}
+h1 {
+    color: #1d4ed8;
+    text-align: center;
+    margin-bottom: 12px;
 }
 p {
     color: #374151;
     text-align: center;
 }
-.campeon {
+.tarjeta-destacada {
+    max-width: 340px;
+    padding: 20px;
+    margin: 24px auto;
+
     background-color: white;
     border: 2px solid #1d4ed8;
     border-radius: 12px;
-    padding: 20px;
+    
+    text-align: center;
+}
+.seccion-tarjetas {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+}
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 160px;
+  padding: 12px 24px;
+
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #1d4ed8;
+  border-radius: 16px;
+
+  
+  text-align: center;
+  transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+}
+.tarjeta:hover {
+    background-color: #dbeafe;
+    border-color: #15161a;
+    transform: translateY(-5px);
+}
+.boton-principal {
+    display: block;
     margin: 24px auto;
-    max-width: 340px;
+    padding: 12px 24px;
+
+    background-color: #1d4ed8;
+    border: none;
+    border-radius: 8px;
+
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.boton-principal:hover {
+    background-color: #2563eb;
+    transform: translateY(-2px);
+}
+.tarjeta h3 {
+  margin: 0 0 8px 0;
+  color: #1d4ed8;
+  font-size: 18px;
+}
+
+.tarjeta p {
+  margin: 4px 0;
+  color: #374151;
+  font-size: 14px;
+  font-weight: normal;
 }
