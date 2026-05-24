@@ -1,44 +1,53 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <title>TITULO DE LA PESTAÑA</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera landing</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-        <header>
-            <h1>TITULO PRINCIPAL</h1>
-            <p>SUBTITULO O DESCRIPCION</p>
-        </header>
+  <body>
+    <header class="encabezado">
+      <h1>Mi primera página profesional</h1>
+      <p>Estoy aprendiendo HTML y CSS para crear proyectos reales.</p>
+    </header>
 
-        <main>
-            <section class="tarjeta-destacada">
-                <h2>TITULO SECUNDARIO</h2>
-                <p>DESCRIPCION CORTA</p>
-            </section>  
-        
-        <div class="contenedor-boton">
-            <button type="button" class="boton-principal">Ver más</button>
-        </div>
+    <main>
+      <section class="tarjeta-destacada">
+        <h2>Sobre este proyecto</h2>
+        <p>Esta página es mi primer paso para construir un portfolio como desarrollador frontend.</p>
+      </section>
 
-        <section class="seccion-tarjetas">
-            <article class="tarjeta">
-                <h3>NOMBRE</h3>
-                <p>CATEGORIA</p>
-                <p>DESCRIPCION</p>
-            </article>
-            <article class="tarjeta">
-                <h3>NOMBRE</h3>
-                <p>CATEGORIA</p>
-                <p>DESCRIPCION</p>
-            </article>
-            <article class="tarjeta">
-                <h3>NOMBRE</h3>
-                <p>CATEGORIA</p>
-                <p>DESCRIPCION</p>
-            </article>
-        </section>
+      <div class="contenedor-boton">
+        <a href="#proyectos" class="boton-principal">Ver proyectos</a>
+      </div>
+
+      <section id="proyectos" class="seccion-tarjetas">
+        <h2 class="titulo-seccion">Mis primeros proyectos</h2>
+
+        <article class="tarjeta">
+          <h3>Landing page</h3>
+          <p>HTML y CSS</p>
+          <p>Primera página responsive con tarjetas y botón.</p>
+        </article>
+
+        <article class="tarjeta">
+          <h3>Tarjetas flexibles</h3>
+          <p>CSS Flexbox</p>
+          <p>Práctica de distribución de elementos en pantalla.</p>
+        </article>
+
+        <article class="tarjeta">
+          <h3>Portfolio inicial</h3>
+          <p>Proyecto personal</p>
+          <p>Base de mi futuro portfolio profesional.</p>
+        </article>
+      </section>
     </main>
-    </body>
+
+    <footer class="pie-pagina">
+      <p>Creado por mí durante mi plan de aprendizaje frontend.</p>
+    </footer>
+  </body>
 </html>
