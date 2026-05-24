@@ -1,3 +1,7 @@
+/* =========================
+   1. Reset y base
+========================= */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,32 +12,9 @@ html {
   scroll-behavior: smooth;
 }
 
-.navegacion {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-  margin-bottom: 40px;
-}
-
-.navegacion a {
-  color: #1d4ed8;
-  font-weight: 700;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.navegacion a:hover {
-  color: #2563eb;
-}
-
-.hero {
-  max-width: 720px;
-  margin: 0 auto;
-}
-
 body {
-  background-color: #f0f4ff;
-  color: #111827;
+  background-color: #f8fafc;
+  color: #0f172a;
   font-family: Arial, sans-serif;
   line-height: 1.5;
 }
@@ -44,44 +25,55 @@ main {
   padding: 24px;
 }
 
+/* =========================
+   2. Header y navegación
+========================= */
+
 .encabezado {
   padding: 40px 20px;
   text-align: center;
 }
 
+.navegacion {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.navegacion a {
+  color: #334155;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navegacion a:hover {
+  color: #0f172a;
+}
+
+.hero {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
 h1 {
-  color: #1d4ed8;
+  color: #0f172a;
   margin-bottom: 12px;
 }
 
 .encabezado p {
-  color: #374151;
+  color: #475569;
 }
 
-.tarjeta-destacada {
-  max-width: 520px;
-  padding: 24px;
-  margin: 24px auto;
-  background-color: white;
-  border: 2px solid #1d4ed8;
-  border-radius: 12px;
-  text-align: center;
-}
-
-.tarjeta-destacada h2 {
-  margin-bottom: 12px;
-  color: #1d4ed8;
-}
-
-.contenedor-boton {
-  text-align: center;
-  margin: 24px 0;
-}
+/* =========================
+   3. Botones
+========================= */
 
 .boton-principal {
   display: inline-block;
   padding: 12px 24px;
-  background-color: #1d4ed8;
+  background-color: #0f172a;
   border-radius: 8px;
   color: white;
   font-size: 16px;
@@ -91,9 +83,42 @@ h1 {
 }
 
 .boton-principal:hover {
-  background-color: #2563eb;
+  background-color: #334155;
   transform: translateY(-2px);
 }
+
+.contenedor-boton {
+  text-align: center;
+  margin: 24px 0;
+}
+
+/* =========================
+   4. Tarjeta destacada
+========================= */
+
+.tarjeta-destacada {
+  max-width: 520px;
+  padding: 24px;
+  margin: 24px auto;
+  background-color: white;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+
+.tarjeta-destacada h2 {
+  margin-bottom: 12px;
+  color: #0f172a;
+}
+
+.tarjeta-destacada p {
+  color: #475569;
+}
+
+/* =========================
+   5. Sección de tarjetas
+========================= */
 
 .seccion-tarjetas {
   display: flex;
@@ -106,7 +131,7 @@ h1 {
 .titulo-seccion {
   width: 100%;
   text-align: center;
-  color: #1d4ed8;
+  color: #0f172a;
   margin-bottom: 8px;
 }
 
@@ -114,51 +139,98 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
   width: 220px;
   padding: 20px;
+
   background-color: white;
-  border: 1px solid #1d4ed8;
+  border: 1px solid #e2e8f0;
   border-radius: 16px;
+
   text-align: center;
-  transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+  transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .tarjeta:hover {
-  background-color: #dbeafe;
-  border-color: #15161a;
+  background-color: #f8fafc;
+  border-color: #94a3b8;
   transform: translateY(-5px);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
 }
 
 .tarjeta h3 {
   margin-bottom: 8px;
-  color: #1d4ed8;
+  color: #0f172a;
   font-size: 18px;
 }
 
 .tarjeta p {
   margin: 4px 0;
-  color: #374151;
+  color: #475569;
   font-size: 14px;
 }
 
-.pie-pagina {
-  padding: 24px;
+/* =========================
+   6. Sección habilidades
+========================= */
+
+.seccion-habilidades {
+  max-width: 720px;
+  margin: 64px auto 0;
+  padding: 40px;
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
   text-align: center;
-  color: #374151;
 }
+
+.seccion-habilidades h2 {
+  margin-bottom: 12px;
+  color: #0f172a;
+  font-size: 28px;
+}
+
+.seccion-habilidades p {
+  max-width: 560px;
+  margin: 0 auto 28px;
+  color: #475569;
+}
+
+.lista-habilidades {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.lista-habilidades span {
+  padding: 10px 14px;
+  background-color: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  border-radius: 999px;
+  color: #334155;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* =========================
+   7. Sección contacto
+========================= */
+
 .seccion-contacto {
   max-width: 720px;
   margin: 64px auto 0;
   padding: 40px;
   background-color: white;
-  border: 1px solid #dbeafe;
+  border: 1px solid #e2e8f0;
   border-radius: 20px;
   box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
 }
 
 .seccion-contacto h2 {
   margin-bottom: 12px;
-  color: #1d4ed8;
+  color: #0f172a;
   font-size: 28px;
   text-align: center;
 }
@@ -166,7 +238,7 @@ h1 {
 .seccion-contacto > p {
   max-width: 560px;
   margin: 0 auto 32px;
-  color: #374151;
+  color: #475569;
   text-align: center;
 }
 
@@ -182,7 +254,7 @@ h1 {
 .campo-formulario label {
   display: block;
   margin-bottom: 8px;
-  color: #111827;
+  color: #0f172a;
   font-size: 14px;
   font-weight: 700;
 }
@@ -191,10 +263,10 @@ h1 {
 .campo-formulario textarea {
   width: 100%;
   padding: 13px 14px;
-  border: 1px solid #bfdbfe;
+  border: 1px solid #cbd5e1;
   border-radius: 10px;
   background-color: #f8fafc;
-  color: #111827;
+  color: #0f172a;
   font: inherit;
   transition: border-color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 }
@@ -202,9 +274,9 @@ h1 {
 .campo-formulario input:focus,
 .campo-formulario textarea:focus {
   outline: none;
-  border-color: #1d4ed8;
+  border-color: #334155;
   background-color: white;
-  box-shadow: 0 0 0 4px rgba(29, 78, 216, 0.12);
+  box-shadow: 0 0 0 4px rgba(51, 65, 85, 0.12);
 }
 
 .campo-formulario textarea {
@@ -218,6 +290,19 @@ h1 {
   text-align: center;
 }
 
+/* =========================
+   8. Footer
+========================= */
+
+.pie-pagina {
+  padding: 24px;
+  text-align: center;
+  color: #475569;
+}
+
+/* =========================
+   9. Responsive
+========================= */
 
 @media (max-width: 768px) {
   main {
@@ -226,6 +311,12 @@ h1 {
 
   .encabezado {
     padding: 32px 16px;
+  }
+
+  .navegacion {
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 32px;
   }
 
   h1 {
@@ -246,7 +337,27 @@ h1 {
     width: 100%;
     max-width: 360px;
   }
-.seccion-contacto {
+
+  .seccion-habilidades {
+    margin-top: 48px;
+    padding: 28px 20px;
+    border-radius: 16px;
+  }
+
+  .seccion-habilidades h2 {
+    font-size: 24px;
+  }
+
+  .lista-habilidades {
+    gap: 10px;
+  }
+
+  .lista-habilidades span {
+    font-size: 13px;
+    padding: 9px 12px;
+  }
+
+  .seccion-contacto {
     margin-top: 48px;
     padding: 28px 20px;
     border-radius: 16px;
@@ -255,10 +366,4 @@ h1 {
   .seccion-contacto h2 {
     font-size: 24px;
   }
-
-  .navegacion {
-    flex-direction: column;
-    gap: 12px;
-    margin-bottom: 32px;
-  }
-}   
+}
