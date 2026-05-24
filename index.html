@@ -12,7 +12,7 @@
       <h1>Mi primera página profesional</h1>
       <p>Estoy aprendiendo HTML y CSS para crear proyectos reales.</p>
     </header>
-
+    
     <main>
       <section class="tarjeta-destacada">
         <h2>Sobre este proyecto</h2>
@@ -44,6 +44,28 @@
           <p>Base de mi futuro portfolio profesional.</p>
         </article>
       </section>
+
+      <section class="seccion-contacto">
+        <h2>Contacto</h2>
+        <p>Si quieres hablar sobre un proyecto, colaboracion o propuestas, puedes escribirme desde este formulario:</p>
+
+        <form class="formulario-contacto">
+            <div class="campo-formulario">
+                <label for="nombre">Nombre</label>
+                <input id="nombre" type="text" placeholder="Tu nombre">
+            </div>
+            <div class="campo-formulario">
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Tu email">
+            </div>
+            <div class="campo-formulario">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" placeholder="Tu mensaje"></textarea>
+            </div>
+
+            <button type="submit" class="boton-principal">Enviar mensaje</button>
+        </form>
+     </section>
     </main>
 
     <footer class="pie-pagina">
